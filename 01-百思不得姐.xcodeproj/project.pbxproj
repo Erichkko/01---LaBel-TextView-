@@ -13,11 +13,11 @@
 		FEA43B451D16B43D0069F9A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B291D16B43D0069F9A7 /* AppDelegate.m */; };
 		FEA43B461D16B43D0069F9A7 /* WLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B2C1D16B43D0069F9A7 /* WLTabBarController.m */; };
 		FEA43B471D16B43D0069F9A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B2D1D16B43D0069F9A7 /* main.m */; };
-		FEA43B481D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B311D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.m */; };
-		FEA43B491D16B43D0069F9A7 /* UIView+WLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B331D16B43D0069F9A7 /* UIView+WLExtension.m */; };
 		FEA43B4A1D16B43D0069F9A7 /* WLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B351D16B43D0069F9A7 /* WLTabBar.m */; };
 		FEA43B4B1D16B43D0069F9A7 /* WLMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B3A1D16B43D0069F9A7 /* WLMeController.m */; };
 		FEA43B4C1D16B43D0069F9A7 /* WLNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B401D16B43D0069F9A7 /* WLNewController.m */; };
+		FEA43B531D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B501D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.m */; };
+		FEA43B541D16B6C00069F9A7 /* UIView+WLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B521D16B6C00069F9A7 /* UIView+WLExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +33,6 @@
 		FEA43B2B1D16B43D0069F9A7 /* WLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTabBarController.h; sourceTree = "<group>"; };
 		FEA43B2C1D16B43D0069F9A7 /* WLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTabBarController.m; sourceTree = "<group>"; };
 		FEA43B2D1D16B43D0069F9A7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FEA43B301D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WLExtension.h"; sourceTree = "<group>"; };
-		FEA43B311D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WLExtension.m"; sourceTree = "<group>"; };
-		FEA43B321D16B43D0069F9A7 /* UIView+WLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WLExtension.h"; sourceTree = "<group>"; };
-		FEA43B331D16B43D0069F9A7 /* UIView+WLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WLExtension.m"; sourceTree = "<group>"; };
 		FEA43B341D16B43D0069F9A7 /* WLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTabBar.h; sourceTree = "<group>"; };
 		FEA43B351D16B43D0069F9A7 /* WLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTabBar.m; sourceTree = "<group>"; };
 		FEA43B361D16B43D0069F9A7 /* wlbdj.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wlbdj.pch; sourceTree = "<group>"; };
@@ -44,6 +40,10 @@
 		FEA43B3A1D16B43D0069F9A7 /* WLMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMeController.m; sourceTree = "<group>"; };
 		FEA43B3F1D16B43D0069F9A7 /* WLNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLNewController.h; sourceTree = "<group>"; };
 		FEA43B401D16B43D0069F9A7 /* WLNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLNewController.m; sourceTree = "<group>"; };
+		FEA43B4F1D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WLExtension.h"; sourceTree = "<group>"; };
+		FEA43B501D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WLExtension.m"; sourceTree = "<group>"; };
+		FEA43B511D16B6C00069F9A7 /* UIView+WLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WLExtension.h"; sourceTree = "<group>"; };
+		FEA43B521D16B6C00069F9A7 /* UIView+WLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WLExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +95,10 @@
 			isa = PBXGroup;
 			children = (
 				FEA43B171D16B43D0069F9A7 /* Essence(精华) */,
-				FEA43B1D1D16B43D0069F9A7 /* Essence(精华)副本 */,
-				FEA43B211D16B43D0069F9A7 /* FriendTrends(关注) */,
-				FEA43B271D16B43D0069F9A7 /* Main(主) */,
-				FEA43B371D16B43D0069F9A7 /* Me(我) */,
 				FEA43B3D1D16B43D0069F9A7 /* New(新帖) */,
+				FEA43B211D16B43D0069F9A7 /* FriendTrends(关注) */,
+				FEA43B371D16B43D0069F9A7 /* Me(我) */,
+				FEA43B271D16B43D0069F9A7 /* Main(主) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -131,37 +130,6 @@
 			sourceTree = "<group>";
 		};
 		FEA43B1C1D16B43D0069F9A7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FEA43B1D1D16B43D0069F9A7 /* Essence(精华)副本 */ = {
-			isa = PBXGroup;
-			children = (
-				FEA43B1E1D16B43D0069F9A7 /* Controller */,
-				FEA43B1F1D16B43D0069F9A7 /* Model */,
-				FEA43B201D16B43D0069F9A7 /* View */,
-			);
-			path = "Essence(精华)副本";
-			sourceTree = "<group>";
-		};
-		FEA43B1E1D16B43D0069F9A7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		FEA43B1F1D16B43D0069F9A7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FEA43B201D16B43D0069F9A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -204,12 +172,13 @@
 		FEA43B271D16B43D0069F9A7 /* Main(主) */ = {
 			isa = PBXGroup;
 			children = (
-				FEA43B281D16B43D0069F9A7 /* AppDelegate.h */,
-				FEA43B291D16B43D0069F9A7 /* AppDelegate.m */,
+				FEA43B4E1D16B6C00069F9A7 /* Category */,
 				FEA43B2A1D16B43D0069F9A7 /* Controller */,
-				FEA43B2D1D16B43D0069F9A7 /* main.m */,
 				FEA43B2E1D16B43D0069F9A7 /* Model */,
 				FEA43B2F1D16B43D0069F9A7 /* View */,
+				FEA43B281D16B43D0069F9A7 /* AppDelegate.h */,
+				FEA43B291D16B43D0069F9A7 /* AppDelegate.m */,
+				FEA43B2D1D16B43D0069F9A7 /* main.m */,
 				FEA43B361D16B43D0069F9A7 /* wlbdj.pch */,
 			);
 			path = "Main(主)";
@@ -234,10 +203,6 @@
 		FEA43B2F1D16B43D0069F9A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FEA43B301D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.h */,
-				FEA43B311D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.m */,
-				FEA43B321D16B43D0069F9A7 /* UIView+WLExtension.h */,
-				FEA43B331D16B43D0069F9A7 /* UIView+WLExtension.m */,
 				FEA43B341D16B43D0069F9A7 /* WLTabBar.h */,
 				FEA43B351D16B43D0069F9A7 /* WLTabBar.m */,
 			);
@@ -308,6 +273,17 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FEA43B4E1D16B6C00069F9A7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B4F1D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.h */,
+				FEA43B501D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.m */,
+				FEA43B511D16B6C00069F9A7 /* UIView+WLExtension.h */,
+				FEA43B521D16B6C00069F9A7 /* UIView+WLExtension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,12 +360,12 @@
 				FEA43B4A1D16B43D0069F9A7 /* WLTabBar.m in Sources */,
 				FEA43B4C1D16B43D0069F9A7 /* WLNewController.m in Sources */,
 				FEA43B461D16B43D0069F9A7 /* WLTabBarController.m in Sources */,
-				FEA43B491D16B43D0069F9A7 /* UIView+WLExtension.m in Sources */,
 				FEA43B441D16B43D0069F9A7 /* WLFriendTrendsController.m in Sources */,
 				FEA43B471D16B43D0069F9A7 /* main.m in Sources */,
 				FEA43B431D16B43D0069F9A7 /* WLEssenceController.m in Sources */,
 				FEA43B4B1D16B43D0069F9A7 /* WLMeController.m in Sources */,
-				FEA43B481D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.m in Sources */,
+				FEA43B531D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.m in Sources */,
+				FEA43B541D16B6C00069F9A7 /* UIView+WLExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
