@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WLTabBarController.h
 //  01-百思不得姐
 //
 //  Created by wanglong on 16/6/19.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WLTabBarController : UITabBarController
 
 @end
-

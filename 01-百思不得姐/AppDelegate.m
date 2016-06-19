@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "WLTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +24,11 @@
     
     
     //2.设置跟控制器
-    self.window.rootViewController = [[ViewController alloc] init];
+    WLTabBarController *tabBarVc = [[WLTabBarController alloc] init];
+    
+       
+    
+    self.window.rootViewController = tabBarVc;
     
     
     //3.显示窗口

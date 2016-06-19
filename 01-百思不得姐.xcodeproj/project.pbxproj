@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		FEA43AE71D165AD90069F9A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43AE61D165AD90069F9A7 /* main.m */; };
 		FEA43AEA1D165AD90069F9A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43AE91D165AD90069F9A7 /* AppDelegate.m */; };
-		FEA43AED1D165AD90069F9A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43AEC1D165AD90069F9A7 /* ViewController.m */; };
 		FEA43AF21D165AD90069F9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA43AF11D165AD90069F9A7 /* Assets.xcassets */; };
+		FEA43AFE1D16658E0069F9A7 /* WLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43AFD1D16658E0069F9A7 /* WLTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,10 +18,10 @@
 		FEA43AE61D165AD90069F9A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEA43AE81D165AD90069F9A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEA43AE91D165AD90069F9A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FEA43AEB1D165AD90069F9A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FEA43AEC1D165AD90069F9A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FEA43AF11D165AD90069F9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA43AF61D165AD90069F9A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEA43AFC1D16658E0069F9A7 /* WLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTabBarController.h; sourceTree = "<group>"; };
+		FEA43AFD1D16658E0069F9A7 /* WLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 			children = (
 				FEA43AE81D165AD90069F9A7 /* AppDelegate.h */,
 				FEA43AE91D165AD90069F9A7 /* AppDelegate.m */,
-				FEA43AEB1D165AD90069F9A7 /* ViewController.h */,
-				FEA43AEC1D165AD90069F9A7 /* ViewController.m */,
+				FEA43AFC1D16658E0069F9A7 /* WLTabBarController.h */,
+				FEA43AFD1D16658E0069F9A7 /* WLTabBarController.m */,
 				FEA43AE51D165AD90069F9A7 /* Supporting Files */,
 			);
 			path = "01-百思不得姐";
@@ -99,6 +99,7 @@
 		FEA43ADA1D165AD90069F9A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WL;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = wanglong;
 				TargetAttributes = {
@@ -142,9 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEA43AED1D165AD90069F9A7 /* ViewController.m in Sources */,
 				FEA43AEA1D165AD90069F9A7 /* AppDelegate.m in Sources */,
 				FEA43AE71D165AD90069F9A7 /* main.m in Sources */,
+				FEA43AFE1D16658E0069F9A7 /* WLTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
