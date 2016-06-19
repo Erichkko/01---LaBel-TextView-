@@ -7,6 +7,7 @@
 //
 
 #import "WLFriendTrendsController.h"
+#import "WLRecommedController.h"
 
 @interface WLFriendTrendsController ()
 
@@ -24,6 +25,11 @@
 -(void)leftBarButtonItem
 {
     WLLogFunc;
+    WLRecommedController *recommedVc = [[WLRecommedController alloc] init];
+    
+    [self.navigationController pushViewController:recommedVc animated:YES];
+    
+    
 }
 
 @end
