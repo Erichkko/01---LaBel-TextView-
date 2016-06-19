@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLFriendTrendsController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="hhv-Vi-jOQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="uBU-EN-0XC">
+                    <rect key="frame" x="163" y="216" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="YPF-Hz-JTk"/>
+                        <constraint firstAttribute="width" constant="48" id="mQm-B1-F0Z"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDW-9C-aLb">
+                    <rect key="frame" x="88" y="405" width="200" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="ccD-60-Mc7"/>
+                        <constraint firstAttribute="height" constant="48" id="eb0-Hg-6B9"/>
+                    </constraints>
+                    <state key="normal" title="点击按钮登录" backgroundImage="friendsTrend_login">
+                        <color key="titleColor" red="1" green="0.2606361975" blue="0.19006691219999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="friendsTrend_login_click">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8i-Zb-o7r">
+                    <rect key="frame" x="30" y="304" width="315" height="61"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">中彩网讯 6月12日晚,中国福利彩票双
+色球游戏进行第2016067
+期开奖。当期开</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="t8i-Zb-o7r" secondAttribute="trailing" constant="30" id="3F7-SN-2pS"/>
+                <constraint firstItem="BDW-9C-aLb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8SD-qG-Y9K"/>
+                <constraint firstItem="t8i-Zb-o7r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="CBI-6t-yna"/>
+                <constraint firstItem="BDW-9C-aLb" firstAttribute="top" secondItem="t8i-Zb-o7r" secondAttribute="bottom" constant="40" id="OLH-VA-zyR"/>
+                <constraint firstItem="t8i-Zb-o7r" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SJ2-eK-syD"/>
+                <constraint firstItem="t8i-Zb-o7r" firstAttribute="top" secondItem="uBU-EN-0XC" secondAttribute="bottom" constant="40" id="nOm-wa-BWq"/>
+                <constraint firstItem="t8i-Zb-o7r" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qdd-7m-ZAe"/>
+                <constraint firstItem="uBU-EN-0XC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vEo-hI-YlW"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="friendsTrend_login" width="243" height="48"/>
+        <image name="friendsTrend_login_click" width="243" height="48"/>
+        <image name="header_cry_icon" width="48" height="48"/>
+    </resources>
+</document>

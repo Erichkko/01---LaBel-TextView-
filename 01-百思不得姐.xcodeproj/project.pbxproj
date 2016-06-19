@@ -18,6 +18,8 @@
 		FEA43B4C1D16B43D0069F9A7 /* WLNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B401D16B43D0069F9A7 /* WLNewController.m */; };
 		FEA43B531D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B501D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.m */; };
 		FEA43B541D16B6C00069F9A7 /* UIView+WLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B521D16B6C00069F9A7 /* UIView+WLExtension.m */; };
+		FEA43B571D16BF250069F9A7 /* WLNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B561D16BF250069F9A7 /* WLNavigationBar.m */; };
+		FEA43B591D16D8EF0069F9A7 /* WLFriendTrendsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA43B581D16D8EF0069F9A7 /* WLFriendTrendsController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,9 @@
 		FEA43B501D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WLExtension.m"; sourceTree = "<group>"; };
 		FEA43B511D16B6C00069F9A7 /* UIView+WLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WLExtension.h"; sourceTree = "<group>"; };
 		FEA43B521D16B6C00069F9A7 /* UIView+WLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WLExtension.m"; sourceTree = "<group>"; };
+		FEA43B551D16BF250069F9A7 /* WLNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLNavigationBar.h; sourceTree = "<group>"; };
+		FEA43B561D16BF250069F9A7 /* WLNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLNavigationBar.m; sourceTree = "<group>"; };
+		FEA43B581D16D8EF0069F9A7 /* WLFriendTrendsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLFriendTrendsController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +156,7 @@
 			children = (
 				FEA43B231D16B43D0069F9A7 /* WLFriendTrendsController.h */,
 				FEA43B241D16B43D0069F9A7 /* WLFriendTrendsController.m */,
+				FEA43B581D16D8EF0069F9A7 /* WLFriendTrendsController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,6 +195,8 @@
 			children = (
 				FEA43B2B1D16B43D0069F9A7 /* WLTabBarController.h */,
 				FEA43B2C1D16B43D0069F9A7 /* WLTabBarController.m */,
+				FEA43B551D16BF250069F9A7 /* WLNavigationBar.h */,
+				FEA43B561D16BF250069F9A7 /* WLNavigationBar.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEA43B591D16D8EF0069F9A7 /* WLFriendTrendsController.xib in Resources */,
 				FEA43AF21D165AD90069F9A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEA43B571D16BF250069F9A7 /* WLNavigationBar.m in Sources */,
 				FEA43B451D16B43D0069F9A7 /* AppDelegate.m in Sources */,
 				FEA43B4A1D16B43D0069F9A7 /* WLTabBar.m in Sources */,
 				FEA43B4C1D16B43D0069F9A7 /* WLNewController.m in Sources */,

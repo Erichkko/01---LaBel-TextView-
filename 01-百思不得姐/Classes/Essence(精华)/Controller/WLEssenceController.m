@@ -19,7 +19,7 @@
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithViewContoller:self normalImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" action:@selector(leftBarButtonItem)];
-    
+    self.view.backgroundColor = WLGlobalColor;
 }
 
 -(void)leftBarButtonItem
@@ -27,4 +27,12 @@
     WLLogFunc;
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor redColor];
+    [self.navigationController pushViewController:vc
+                                         animated:YES];
+}
 @end

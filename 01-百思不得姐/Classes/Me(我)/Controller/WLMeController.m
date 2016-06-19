@@ -24,6 +24,7 @@
     NSArray *rightArry = @[setBarBtn,moonBarBtn];
     
     self.navigationItem.rightBarButtonItems = rightArry;
+    self.view.backgroundColor = WLGlobalColor;
     
 }
 

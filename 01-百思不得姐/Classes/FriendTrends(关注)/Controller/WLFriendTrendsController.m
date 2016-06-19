@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"我的关注";
    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithViewContoller:self normalImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" action:@selector(leftBarButtonItem)];
-    
+    self.view.backgroundColor = WLGlobalColor;
 }
 
 -(void)leftBarButtonItem

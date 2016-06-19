@@ -11,6 +11,7 @@
 #import "WLNewController.h"
 #import "WLFriendTrendsController.h"
 #import "WLMeController.h"
+#import "WLNavigationBar.h"
 
 #import "WLTabBar.h"
 
@@ -20,10 +21,9 @@
 
 @implementation WLTabBarController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    
+
++ (void)initialize
+{
     NSMutableDictionary *attrDict = [NSMutableDictionary dictionary];
     attrDict[NSForegroundColorAttributeName] = [UIColor grayColor];
     attrDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
@@ -35,6 +35,10 @@
     
     [item setTitleTextAttributes:attrDict forState:UIControlStateNormal];
     [item setTitleTextAttributes:attrDict forState:UIControlStateSelected];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
     WLEssenceController *essenceVc = [[WLEssenceController alloc] init];
     [self setupViewController:essenceVc title:@"精华" normalImage:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
@@ -56,13 +60,13 @@
 - (void)setupViewController:(UIViewController *)vc title:(NSString *)title normalImage:(NSString *)normalImage selectedImage:(NSString *)selectedImage
 {
     //设置标题和图片
-    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100.0 alpha:1.0 ];
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:normalImage];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     
     //添加 子控制器
-    UINavigationController *navVc = [[UINavigationController alloc] initWithRootViewController:vc];
+    WLNavigationBar *navVc = [[WLNavigationBar alloc] initWithRootViewController:vc];
+  
     [self addChildViewController:navVc];
 }
 

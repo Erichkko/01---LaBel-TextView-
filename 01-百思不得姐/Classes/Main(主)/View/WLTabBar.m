@@ -46,7 +46,7 @@
     
     NSInteger index = 0 ;
     for (UIView *view in self.subviews) {
-        NSLog(@"index == %zd",index);
+
         if (![view isKindOfClass:NSClassFromString(@"UITabBarButton")])
             continue;
         NSInteger newIndex = index >1 ?index +1 :index;
