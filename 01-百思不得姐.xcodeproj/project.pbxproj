@@ -7,21 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FEA43AE71D165AD90069F9A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43AE61D165AD90069F9A7 /* main.m */; };
-		FEA43AEA1D165AD90069F9A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43AE91D165AD90069F9A7 /* AppDelegate.m */; };
 		FEA43AF21D165AD90069F9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA43AF11D165AD90069F9A7 /* Assets.xcassets */; };
-		FEA43AFE1D16658E0069F9A7 /* WLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43AFD1D16658E0069F9A7 /* WLTabBarController.m */; };
+		FEA43B431D16B43D0069F9A7 /* WLEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B1A1D16B43D0069F9A7 /* WLEssenceController.m */; };
+		FEA43B441D16B43D0069F9A7 /* WLFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B241D16B43D0069F9A7 /* WLFriendTrendsController.m */; };
+		FEA43B451D16B43D0069F9A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B291D16B43D0069F9A7 /* AppDelegate.m */; };
+		FEA43B461D16B43D0069F9A7 /* WLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B2C1D16B43D0069F9A7 /* WLTabBarController.m */; };
+		FEA43B471D16B43D0069F9A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B2D1D16B43D0069F9A7 /* main.m */; };
+		FEA43B481D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B311D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.m */; };
+		FEA43B491D16B43D0069F9A7 /* UIView+WLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B331D16B43D0069F9A7 /* UIView+WLExtension.m */; };
+		FEA43B4A1D16B43D0069F9A7 /* WLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B351D16B43D0069F9A7 /* WLTabBar.m */; };
+		FEA43B4B1D16B43D0069F9A7 /* WLMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B3A1D16B43D0069F9A7 /* WLMeController.m */; };
+		FEA43B4C1D16B43D0069F9A7 /* WLNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B401D16B43D0069F9A7 /* WLNewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FEA43AE21D165AD90069F9A7 /* 01-百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEA43AE61D165AD90069F9A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FEA43AE81D165AD90069F9A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FEA43AE91D165AD90069F9A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FEA43AF11D165AD90069F9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA43AF61D165AD90069F9A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FEA43AFC1D16658E0069F9A7 /* WLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTabBarController.h; sourceTree = "<group>"; };
-		FEA43AFD1D16658E0069F9A7 /* WLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTabBarController.m; sourceTree = "<group>"; };
+		FEA43B191D16B43D0069F9A7 /* WLEssenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLEssenceController.h; sourceTree = "<group>"; };
+		FEA43B1A1D16B43D0069F9A7 /* WLEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLEssenceController.m; sourceTree = "<group>"; };
+		FEA43B231D16B43D0069F9A7 /* WLFriendTrendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLFriendTrendsController.h; sourceTree = "<group>"; };
+		FEA43B241D16B43D0069F9A7 /* WLFriendTrendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLFriendTrendsController.m; sourceTree = "<group>"; };
+		FEA43B281D16B43D0069F9A7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEA43B291D16B43D0069F9A7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEA43B2B1D16B43D0069F9A7 /* WLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTabBarController.h; sourceTree = "<group>"; };
+		FEA43B2C1D16B43D0069F9A7 /* WLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTabBarController.m; sourceTree = "<group>"; };
+		FEA43B2D1D16B43D0069F9A7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEA43B301D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WLExtension.h"; sourceTree = "<group>"; };
+		FEA43B311D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WLExtension.m"; sourceTree = "<group>"; };
+		FEA43B321D16B43D0069F9A7 /* UIView+WLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WLExtension.h"; sourceTree = "<group>"; };
+		FEA43B331D16B43D0069F9A7 /* UIView+WLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WLExtension.m"; sourceTree = "<group>"; };
+		FEA43B341D16B43D0069F9A7 /* WLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTabBar.h; sourceTree = "<group>"; };
+		FEA43B351D16B43D0069F9A7 /* WLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTabBar.m; sourceTree = "<group>"; };
+		FEA43B361D16B43D0069F9A7 /* wlbdj.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wlbdj.pch; sourceTree = "<group>"; };
+		FEA43B391D16B43D0069F9A7 /* WLMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMeController.h; sourceTree = "<group>"; };
+		FEA43B3A1D16B43D0069F9A7 /* WLMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMeController.m; sourceTree = "<group>"; };
+		FEA43B3F1D16B43D0069F9A7 /* WLNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLNewController.h; sourceTree = "<group>"; };
+		FEA43B401D16B43D0069F9A7 /* WLNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLNewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +76,7 @@
 		FEA43AE41D165AD90069F9A7 /* 01-百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
-				FEA43AE81D165AD90069F9A7 /* AppDelegate.h */,
-				FEA43AE91D165AD90069F9A7 /* AppDelegate.m */,
-				FEA43AFC1D16658E0069F9A7 /* WLTabBarController.h */,
-				FEA43AFD1D16658E0069F9A7 /* WLTabBarController.m */,
+				FEA43B161D16B43D0069F9A7 /* Classes */,
 				FEA43AE51D165AD90069F9A7 /* Supporting Files */,
 			);
 			path = "01-百思不得姐";
@@ -68,9 +87,227 @@
 			children = (
 				FEA43AF11D165AD90069F9A7 /* Assets.xcassets */,
 				FEA43AF61D165AD90069F9A7 /* Info.plist */,
-				FEA43AE61D165AD90069F9A7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEA43B161D16B43D0069F9A7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B171D16B43D0069F9A7 /* Essence(精华) */,
+				FEA43B1D1D16B43D0069F9A7 /* Essence(精华)副本 */,
+				FEA43B211D16B43D0069F9A7 /* FriendTrends(关注) */,
+				FEA43B271D16B43D0069F9A7 /* Main(主) */,
+				FEA43B371D16B43D0069F9A7 /* Me(我) */,
+				FEA43B3D1D16B43D0069F9A7 /* New(新帖) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FEA43B171D16B43D0069F9A7 /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B181D16B43D0069F9A7 /* Controller */,
+				FEA43B1B1D16B43D0069F9A7 /* Model */,
+				FEA43B1C1D16B43D0069F9A7 /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		FEA43B181D16B43D0069F9A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B191D16B43D0069F9A7 /* WLEssenceController.h */,
+				FEA43B1A1D16B43D0069F9A7 /* WLEssenceController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FEA43B1B1D16B43D0069F9A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEA43B1C1D16B43D0069F9A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEA43B1D1D16B43D0069F9A7 /* Essence(精华)副本 */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B1E1D16B43D0069F9A7 /* Controller */,
+				FEA43B1F1D16B43D0069F9A7 /* Model */,
+				FEA43B201D16B43D0069F9A7 /* View */,
+			);
+			path = "Essence(精华)副本";
+			sourceTree = "<group>";
+		};
+		FEA43B1E1D16B43D0069F9A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FEA43B1F1D16B43D0069F9A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEA43B201D16B43D0069F9A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEA43B211D16B43D0069F9A7 /* FriendTrends(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B221D16B43D0069F9A7 /* Controller */,
+				FEA43B251D16B43D0069F9A7 /* Model */,
+				FEA43B261D16B43D0069F9A7 /* View */,
+			);
+			path = "FriendTrends(关注)";
+			sourceTree = "<group>";
+		};
+		FEA43B221D16B43D0069F9A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B231D16B43D0069F9A7 /* WLFriendTrendsController.h */,
+				FEA43B241D16B43D0069F9A7 /* WLFriendTrendsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FEA43B251D16B43D0069F9A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEA43B261D16B43D0069F9A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEA43B271D16B43D0069F9A7 /* Main(主) */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B281D16B43D0069F9A7 /* AppDelegate.h */,
+				FEA43B291D16B43D0069F9A7 /* AppDelegate.m */,
+				FEA43B2A1D16B43D0069F9A7 /* Controller */,
+				FEA43B2D1D16B43D0069F9A7 /* main.m */,
+				FEA43B2E1D16B43D0069F9A7 /* Model */,
+				FEA43B2F1D16B43D0069F9A7 /* View */,
+				FEA43B361D16B43D0069F9A7 /* wlbdj.pch */,
+			);
+			path = "Main(主)";
+			sourceTree = "<group>";
+		};
+		FEA43B2A1D16B43D0069F9A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B2B1D16B43D0069F9A7 /* WLTabBarController.h */,
+				FEA43B2C1D16B43D0069F9A7 /* WLTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FEA43B2E1D16B43D0069F9A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEA43B2F1D16B43D0069F9A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B301D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.h */,
+				FEA43B311D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.m */,
+				FEA43B321D16B43D0069F9A7 /* UIView+WLExtension.h */,
+				FEA43B331D16B43D0069F9A7 /* UIView+WLExtension.m */,
+				FEA43B341D16B43D0069F9A7 /* WLTabBar.h */,
+				FEA43B351D16B43D0069F9A7 /* WLTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEA43B371D16B43D0069F9A7 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B381D16B43D0069F9A7 /* Controller */,
+				FEA43B3B1D16B43D0069F9A7 /* Model */,
+				FEA43B3C1D16B43D0069F9A7 /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		FEA43B381D16B43D0069F9A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B391D16B43D0069F9A7 /* WLMeController.h */,
+				FEA43B3A1D16B43D0069F9A7 /* WLMeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FEA43B3B1D16B43D0069F9A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEA43B3C1D16B43D0069F9A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEA43B3D1D16B43D0069F9A7 /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B3E1D16B43D0069F9A7 /* Controller */,
+				FEA43B411D16B43D0069F9A7 /* Model */,
+				FEA43B421D16B43D0069F9A7 /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		FEA43B3E1D16B43D0069F9A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEA43B3F1D16B43D0069F9A7 /* WLNewController.h */,
+				FEA43B401D16B43D0069F9A7 /* WLNewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FEA43B411D16B43D0069F9A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEA43B421D16B43D0069F9A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +380,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEA43AEA1D165AD90069F9A7 /* AppDelegate.m in Sources */,
-				FEA43AE71D165AD90069F9A7 /* main.m in Sources */,
-				FEA43AFE1D16658E0069F9A7 /* WLTabBarController.m in Sources */,
+				FEA43B451D16B43D0069F9A7 /* AppDelegate.m in Sources */,
+				FEA43B4A1D16B43D0069F9A7 /* WLTabBar.m in Sources */,
+				FEA43B4C1D16B43D0069F9A7 /* WLNewController.m in Sources */,
+				FEA43B461D16B43D0069F9A7 /* WLTabBarController.m in Sources */,
+				FEA43B491D16B43D0069F9A7 /* UIView+WLExtension.m in Sources */,
+				FEA43B441D16B43D0069F9A7 /* WLFriendTrendsController.m in Sources */,
+				FEA43B471D16B43D0069F9A7 /* main.m in Sources */,
+				FEA43B431D16B43D0069F9A7 /* WLEssenceController.m in Sources */,
+				FEA43B4B1D16B43D0069F9A7 /* WLMeController.m in Sources */,
+				FEA43B481D16B43D0069F9A7 /* UIBarButtonItem+WLExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +481,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "01-百思不得姐/Classes/Main(主)/wlbdj.pch";
 				INFOPLIST_FILE = "01-百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mineline.-1------";
@@ -249,6 +495,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "01-百思不得姐/Classes/Main(主)/wlbdj.pch";
 				INFOPLIST_FILE = "01-百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mineline.-1------";

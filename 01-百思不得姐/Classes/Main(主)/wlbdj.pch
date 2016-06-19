@@ -1,0 +1,23 @@
+//
+//  wlbdj.pch
+//  01-百思不得姐
+//
+//  Created by wanglong on 16/6/19.
+//  Copyright © 2016年 wanglong. All rights reserved.
+//
+
+#ifndef wlbdj_pch
+#define wlbdj_pch
+
+#import "UIView+WLExtension.h"
+#import "UIBarButtonItem+WLExtension.h"
+
+
+#ifdef DEBUG
+#define WLLog(...) NSLog(__VA_ARGS__)
+#else
+#define WLLog(...)
+#endif
+
+#define WLLogFunc WLLog(@"%s",__func__)
+#endif /* wlbdj_pch */
