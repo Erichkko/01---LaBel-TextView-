@@ -7,6 +7,7 @@
 //
 
 #import "WLEssenceController.h"
+#import "WLRecommendViewController.h"
 
 @interface WLEssenceController ()
 
@@ -25,6 +26,9 @@
 -(void)leftBarButtonItem
 {
     WLLogFunc;
+    WLRecommendViewController *tagVc = [[WLRecommendViewController alloc] init];
+    
+    [self.navigationController pushViewController:tagVc animated:YES];
 }
 
 

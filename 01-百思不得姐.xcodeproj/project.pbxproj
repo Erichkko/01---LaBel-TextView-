@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7A7EEBA2F09AD9AD8C4514D4 /* libPods-01-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1668EEAA845B4AD4DB863B16 /* libPods-01-百思不得姐.a */; };
+		FE7F28271D1AEB5D006D3BED /* WLRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F28261D1AEB5D006D3BED /* WLRecommendViewController.m */; };
+		FE7F28301D1C0A60006D3BED /* WLRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F282E1D1C0A60006D3BED /* WLRecommendCell.m */; };
+		FE7F28311D1C0A60006D3BED /* WLRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7F282F1D1C0A60006D3BED /* WLRecommendCell.xib */; };
+		FE7F28341D1C0F61006D3BED /* WLRecommend.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F28331D1C0F61006D3BED /* WLRecommend.m */; };
+		FE7F28611D1D7B3C006D3BED /* WLLoginAndRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F285F1D1D7B3C006D3BED /* WLLoginAndRegisterController.m */; };
+		FE7F28621D1D7B3C006D3BED /* WLLoginAndRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7F28601D1D7B3C006D3BED /* WLLoginAndRegisterController.xib */; };
+		FE7F28651D1D8A8E006D3BED /* WLQuickBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F28641D1D8A8E006D3BED /* WLQuickBtn.m */; };
 		FEA43AF21D165AD90069F9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA43AF11D165AD90069F9A7 /* Assets.xcassets */; };
 		FEA43B431D16B43D0069F9A7 /* WLEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B1A1D16B43D0069F9A7 /* WLEssenceController.m */; };
 		FEA43B441D16B43D0069F9A7 /* WLFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B241D16B43D0069F9A7 /* WLFriendTrendsController.m */; };
@@ -24,12 +31,30 @@
 		FEA43B5D1D16E50E0069F9A7 /* WLRecommedController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B5B1D16E50E0069F9A7 /* WLRecommedController.m */; };
 		FEA43B5E1D16E50E0069F9A7 /* WLRecommedController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA43B5C1D16E50E0069F9A7 /* WLRecommedController.xib */; };
 		FEA43B601D16E95B0069F9A7 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B5F1D16E95B0069F9A7 /* Foundation+Log.m */; };
+		FEA43B631D181DAD0069F9A7 /* WLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B621D181DAD0069F9A7 /* WLCategory.m */; };
+		FEA43B671D1826C70069F9A7 /* WLLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B651D1826C70069F9A7 /* WLLeftCell.m */; };
+		FEA43B681D1826C70069F9A7 /* WLLeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA43B661D1826C70069F9A7 /* WLLeftCell.xib */; };
+		FEA43B6B1D183C7C0069F9A7 /* WLRecommedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B6A1D183C7C0069F9A7 /* WLRecommedUser.m */; };
+		FEA43B6F1D1841B00069F9A7 /* WLRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B6D1D1841B00069F9A7 /* WLRightCell.m */; };
+		FEA43B701D1841B00069F9A7 /* WLRightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA43B6E1D1841B00069F9A7 /* WLRightCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1668EEAA845B4AD4DB863B16 /* libPods-01-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-01-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		913896BE5A71F3D321364CEF /* Pods-01-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-01-百思不得姐/Pods-01-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
 		FBCD11A3A4C4B6359E07878D /* Pods-01-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-01-百思不得姐/Pods-01-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
+		FE7F28251D1AEB5D006D3BED /* WLRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRecommendViewController.h; sourceTree = "<group>"; };
+		FE7F28261D1AEB5D006D3BED /* WLRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRecommendViewController.m; sourceTree = "<group>"; };
+		FE7F282D1D1C0A60006D3BED /* WLRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRecommendCell.h; sourceTree = "<group>"; };
+		FE7F282E1D1C0A60006D3BED /* WLRecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRecommendCell.m; sourceTree = "<group>"; };
+		FE7F282F1D1C0A60006D3BED /* WLRecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLRecommendCell.xib; sourceTree = "<group>"; };
+		FE7F28321D1C0F61006D3BED /* WLRecommend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRecommend.h; sourceTree = "<group>"; };
+		FE7F28331D1C0F61006D3BED /* WLRecommend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRecommend.m; sourceTree = "<group>"; };
+		FE7F285E1D1D7B3C006D3BED /* WLLoginAndRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLoginAndRegisterController.h; sourceTree = "<group>"; };
+		FE7F285F1D1D7B3C006D3BED /* WLLoginAndRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLoginAndRegisterController.m; sourceTree = "<group>"; };
+		FE7F28601D1D7B3C006D3BED /* WLLoginAndRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLLoginAndRegisterController.xib; sourceTree = "<group>"; };
+		FE7F28631D1D8A8E006D3BED /* WLQuickBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLQuickBtn.h; sourceTree = "<group>"; };
+		FE7F28641D1D8A8E006D3BED /* WLQuickBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLQuickBtn.m; sourceTree = "<group>"; };
 		FEA43AE21D165AD90069F9A7 /* 01-百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA43AF11D165AD90069F9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA43AF61D165AD90069F9A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +85,16 @@
 		FEA43B5B1D16E50E0069F9A7 /* WLRecommedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRecommedController.m; sourceTree = "<group>"; };
 		FEA43B5C1D16E50E0069F9A7 /* WLRecommedController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLRecommedController.xib; sourceTree = "<group>"; };
 		FEA43B5F1D16E95B0069F9A7 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		FEA43B611D181DAD0069F9A7 /* WLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCategory.h; sourceTree = "<group>"; };
+		FEA43B621D181DAD0069F9A7 /* WLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCategory.m; sourceTree = "<group>"; };
+		FEA43B641D1826C70069F9A7 /* WLLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLeftCell.h; sourceTree = "<group>"; };
+		FEA43B651D1826C70069F9A7 /* WLLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLeftCell.m; sourceTree = "<group>"; };
+		FEA43B661D1826C70069F9A7 /* WLLeftCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLLeftCell.xib; sourceTree = "<group>"; };
+		FEA43B691D183C7C0069F9A7 /* WLRecommedUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRecommedUser.h; sourceTree = "<group>"; };
+		FEA43B6A1D183C7C0069F9A7 /* WLRecommedUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRecommedUser.m; sourceTree = "<group>"; };
+		FEA43B6C1D1841B00069F9A7 /* WLRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRightCell.h; sourceTree = "<group>"; };
+		FEA43B6D1D1841B00069F9A7 /* WLRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRightCell.m; sourceTree = "<group>"; };
+		FEA43B6E1D1841B00069F9A7 /* WLRightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLRightCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +189,8 @@
 			children = (
 				FEA43B191D16B43D0069F9A7 /* WLEssenceController.h */,
 				FEA43B1A1D16B43D0069F9A7 /* WLEssenceController.m */,
+				FE7F28251D1AEB5D006D3BED /* WLRecommendViewController.h */,
+				FE7F28261D1AEB5D006D3BED /* WLRecommendViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,6 +198,8 @@
 		FEA43B1B1D16B43D0069F9A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FE7F28321D1C0F61006D3BED /* WLRecommend.h */,
+				FE7F28331D1C0F61006D3BED /* WLRecommend.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +207,9 @@
 		FEA43B1C1D16B43D0069F9A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE7F282D1D1C0A60006D3BED /* WLRecommendCell.h */,
+				FE7F282E1D1C0A60006D3BED /* WLRecommendCell.m */,
+				FE7F282F1D1C0A60006D3BED /* WLRecommendCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +233,9 @@
 				FEA43B5A1D16E50E0069F9A7 /* WLRecommedController.h */,
 				FEA43B5B1D16E50E0069F9A7 /* WLRecommedController.m */,
 				FEA43B5C1D16E50E0069F9A7 /* WLRecommedController.xib */,
+				FE7F285E1D1D7B3C006D3BED /* WLLoginAndRegisterController.h */,
+				FE7F285F1D1D7B3C006D3BED /* WLLoginAndRegisterController.m */,
+				FE7F28601D1D7B3C006D3BED /* WLLoginAndRegisterController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,6 +243,10 @@
 		FEA43B251D16B43D0069F9A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FEA43B611D181DAD0069F9A7 /* WLCategory.h */,
+				FEA43B621D181DAD0069F9A7 /* WLCategory.m */,
+				FEA43B691D183C7C0069F9A7 /* WLRecommedUser.h */,
+				FEA43B6A1D183C7C0069F9A7 /* WLRecommedUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +254,14 @@
 		FEA43B261D16B43D0069F9A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FEA43B641D1826C70069F9A7 /* WLLeftCell.h */,
+				FEA43B651D1826C70069F9A7 /* WLLeftCell.m */,
+				FEA43B661D1826C70069F9A7 /* WLLeftCell.xib */,
+				FEA43B6C1D1841B00069F9A7 /* WLRightCell.h */,
+				FEA43B6D1D1841B00069F9A7 /* WLRightCell.m */,
+				FEA43B6E1D1841B00069F9A7 /* WLRightCell.xib */,
+				FE7F28631D1D8A8E006D3BED /* WLQuickBtn.h */,
+				FE7F28641D1D8A8E006D3BED /* WLQuickBtn.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -392,7 +449,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEA43B591D16D8EF0069F9A7 /* WLFriendTrendsController.xib in Resources */,
+				FEA43B681D1826C70069F9A7 /* WLLeftCell.xib in Resources */,
 				FEA43B5E1D16E50E0069F9A7 /* WLRecommedController.xib in Resources */,
+				FE7F28311D1C0A60006D3BED /* WLRecommendCell.xib in Resources */,
+				FE7F28621D1D7B3C006D3BED /* WLLoginAndRegisterController.xib in Resources */,
+				FEA43B701D1841B00069F9A7 /* WLRightCell.xib in Resources */,
 				FEA43AF21D165AD90069F9A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,11 +519,20 @@
 				FEA43B4C1D16B43D0069F9A7 /* WLNewController.m in Sources */,
 				FEA43B5D1D16E50E0069F9A7 /* WLRecommedController.m in Sources */,
 				FEA43B461D16B43D0069F9A7 /* WLTabBarController.m in Sources */,
+				FEA43B671D1826C70069F9A7 /* WLLeftCell.m in Sources */,
+				FEA43B631D181DAD0069F9A7 /* WLCategory.m in Sources */,
 				FEA43B441D16B43D0069F9A7 /* WLFriendTrendsController.m in Sources */,
+				FE7F28301D1C0A60006D3BED /* WLRecommendCell.m in Sources */,
+				FE7F28611D1D7B3C006D3BED /* WLLoginAndRegisterController.m in Sources */,
+				FEA43B6B1D183C7C0069F9A7 /* WLRecommedUser.m in Sources */,
+				FEA43B6F1D1841B00069F9A7 /* WLRightCell.m in Sources */,
 				FEA43B471D16B43D0069F9A7 /* main.m in Sources */,
 				FEA43B431D16B43D0069F9A7 /* WLEssenceController.m in Sources */,
 				FEA43B4B1D16B43D0069F9A7 /* WLMeController.m in Sources */,
+				FE7F28271D1AEB5D006D3BED /* WLRecommendViewController.m in Sources */,
 				FEA43B601D16E95B0069F9A7 /* Foundation+Log.m in Sources */,
+				FE7F28341D1C0F61006D3BED /* WLRecommend.m in Sources */,
+				FE7F28651D1D8A8E006D3BED /* WLQuickBtn.m in Sources */,
 				FEA43B531D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.m in Sources */,
 				FEA43B541D16B6C00069F9A7 /* UIView+WLExtension.m in Sources */,
 			);

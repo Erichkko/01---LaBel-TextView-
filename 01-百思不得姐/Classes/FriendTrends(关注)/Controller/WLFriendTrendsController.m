@@ -8,6 +8,7 @@
 
 #import "WLFriendTrendsController.h"
 #import "WLRecommedController.h"
+#import "WLLoginAndRegisterController.h"
 
 @interface WLFriendTrendsController ()
 
@@ -29,6 +30,13 @@
     
     [self.navigationController pushViewController:recommedVc animated:YES];
     
+    
+}
+- (IBAction)loginAndRegister {
+    WLLoginAndRegisterController *loginAndRegisterVc = [[WLLoginAndRegisterController alloc] init];
+    [self presentViewController:loginAndRegisterVc animated:YES completion:^{
+        
+    }];
     
 }
 
