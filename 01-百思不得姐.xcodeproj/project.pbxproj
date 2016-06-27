@@ -15,6 +15,15 @@
 		FE7F28611D1D7B3C006D3BED /* WLLoginAndRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F285F1D1D7B3C006D3BED /* WLLoginAndRegisterController.m */; };
 		FE7F28621D1D7B3C006D3BED /* WLLoginAndRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7F28601D1D7B3C006D3BED /* WLLoginAndRegisterController.xib */; };
 		FE7F28651D1D8A8E006D3BED /* WLQuickBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F28641D1D8A8E006D3BED /* WLQuickBtn.m */; };
+		FE7F28681D1E49C4006D3BED /* WLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F28671D1E49C4006D3BED /* WLTextField.m */; };
+		FE7F286B1D1E6C96006D3BED /* WLPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F286A1D1E6C96006D3BED /* WLPushGuideView.m */; };
+		FE7F286D1D1E6CA7006D3BED /* WLPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7F286C1D1E6CA7006D3BED /* WLPushGuideView.xib */; };
+		FE7F287F1D1FB36E006D3BED /* WLTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F287E1D1FB36E006D3BED /* WLTopic.m */; };
+		FE7F28821D1FC546006D3BED /* WLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F28811D1FC546006D3BED /* WLConst.m */; };
+		FE7F28861D1FCC7A006D3BED /* WLTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F28841D1FCC7A006D3BED /* WLTopicCell.m */; };
+		FE7F28871D1FCC7A006D3BED /* WLTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7F28851D1FCC7A006D3BED /* WLTopicCell.xib */; };
+		FE7F288A1D202FD1006D3BED /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F28891D202FD1006D3BED /* NSDate+Extension.m */; };
+		FE7F288D1D21832C006D3BED /* WLTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F288C1D21832C006D3BED /* WLTopicViewController.m */; };
 		FEA43AF21D165AD90069F9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA43AF11D165AD90069F9A7 /* Assets.xcassets */; };
 		FEA43B431D16B43D0069F9A7 /* WLEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B1A1D16B43D0069F9A7 /* WLEssenceController.m */; };
 		FEA43B441D16B43D0069F9A7 /* WLFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B241D16B43D0069F9A7 /* WLFriendTrendsController.m */; };
@@ -55,6 +64,22 @@
 		FE7F28601D1D7B3C006D3BED /* WLLoginAndRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLLoginAndRegisterController.xib; sourceTree = "<group>"; };
 		FE7F28631D1D8A8E006D3BED /* WLQuickBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLQuickBtn.h; sourceTree = "<group>"; };
 		FE7F28641D1D8A8E006D3BED /* WLQuickBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLQuickBtn.m; sourceTree = "<group>"; };
+		FE7F28661D1E49C4006D3BED /* WLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTextField.h; sourceTree = "<group>"; };
+		FE7F28671D1E49C4006D3BED /* WLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTextField.m; sourceTree = "<group>"; };
+		FE7F28691D1E6C96006D3BED /* WLPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLPushGuideView.h; sourceTree = "<group>"; };
+		FE7F286A1D1E6C96006D3BED /* WLPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLPushGuideView.m; sourceTree = "<group>"; };
+		FE7F286C1D1E6CA7006D3BED /* WLPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLPushGuideView.xib; sourceTree = "<group>"; };
+		FE7F287D1D1FB36E006D3BED /* WLTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTopic.h; sourceTree = "<group>"; };
+		FE7F287E1D1FB36E006D3BED /* WLTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTopic.m; sourceTree = "<group>"; };
+		FE7F28801D1FC546006D3BED /* WLConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLConst.h; sourceTree = "<group>"; };
+		FE7F28811D1FC546006D3BED /* WLConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLConst.m; sourceTree = "<group>"; };
+		FE7F28831D1FCC7A006D3BED /* WLTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTopicCell.h; sourceTree = "<group>"; };
+		FE7F28841D1FCC7A006D3BED /* WLTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTopicCell.m; sourceTree = "<group>"; };
+		FE7F28851D1FCC7A006D3BED /* WLTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLTopicCell.xib; sourceTree = "<group>"; };
+		FE7F28881D202FD1006D3BED /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		FE7F28891D202FD1006D3BED /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		FE7F288B1D21832C006D3BED /* WLTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTopicViewController.h; sourceTree = "<group>"; };
+		FE7F288C1D21832C006D3BED /* WLTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTopicViewController.m; sourceTree = "<group>"; };
 		FEA43AE21D165AD90069F9A7 /* 01-百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA43AF11D165AD90069F9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA43AF61D165AD90069F9A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -191,6 +216,8 @@
 				FEA43B1A1D16B43D0069F9A7 /* WLEssenceController.m */,
 				FE7F28251D1AEB5D006D3BED /* WLRecommendViewController.h */,
 				FE7F28261D1AEB5D006D3BED /* WLRecommendViewController.m */,
+				FE7F288B1D21832C006D3BED /* WLTopicViewController.h */,
+				FE7F288C1D21832C006D3BED /* WLTopicViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -200,6 +227,8 @@
 			children = (
 				FE7F28321D1C0F61006D3BED /* WLRecommend.h */,
 				FE7F28331D1C0F61006D3BED /* WLRecommend.m */,
+				FE7F287D1D1FB36E006D3BED /* WLTopic.h */,
+				FE7F287E1D1FB36E006D3BED /* WLTopic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +239,9 @@
 				FE7F282D1D1C0A60006D3BED /* WLRecommendCell.h */,
 				FE7F282E1D1C0A60006D3BED /* WLRecommendCell.m */,
 				FE7F282F1D1C0A60006D3BED /* WLRecommendCell.xib */,
+				FE7F28831D1FCC7A006D3BED /* WLTopicCell.h */,
+				FE7F28841D1FCC7A006D3BED /* WLTopicCell.m */,
+				FE7F28851D1FCC7A006D3BED /* WLTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,6 +294,8 @@
 				FEA43B6E1D1841B00069F9A7 /* WLRightCell.xib */,
 				FE7F28631D1D8A8E006D3BED /* WLQuickBtn.h */,
 				FE7F28641D1D8A8E006D3BED /* WLQuickBtn.m */,
+				FE7F28661D1E49C4006D3BED /* WLTextField.h */,
+				FE7F28671D1E49C4006D3BED /* WLTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,6 +311,8 @@
 				FEA43B291D16B43D0069F9A7 /* AppDelegate.m */,
 				FEA43B2D1D16B43D0069F9A7 /* main.m */,
 				FEA43B361D16B43D0069F9A7 /* wlbdj.pch */,
+				FE7F28801D1FC546006D3BED /* WLConst.h */,
+				FE7F28811D1FC546006D3BED /* WLConst.m */,
 			);
 			path = "Main(主)";
 			sourceTree = "<group>";
@@ -304,6 +340,9 @@
 			children = (
 				FEA43B341D16B43D0069F9A7 /* WLTabBar.h */,
 				FEA43B351D16B43D0069F9A7 /* WLTabBar.m */,
+				FE7F28691D1E6C96006D3BED /* WLPushGuideView.h */,
+				FE7F286A1D1E6C96006D3BED /* WLPushGuideView.m */,
+				FE7F286C1D1E6CA7006D3BED /* WLPushGuideView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,6 +421,8 @@
 				FEA43B501D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.m */,
 				FEA43B511D16B6C00069F9A7 /* UIView+WLExtension.h */,
 				FEA43B521D16B6C00069F9A7 /* UIView+WLExtension.m */,
+				FE7F28881D202FD1006D3BED /* NSDate+Extension.h */,
+				FE7F28891D202FD1006D3BED /* NSDate+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -448,10 +489,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7F286D1D1E6CA7006D3BED /* WLPushGuideView.xib in Resources */,
 				FEA43B591D16D8EF0069F9A7 /* WLFriendTrendsController.xib in Resources */,
 				FEA43B681D1826C70069F9A7 /* WLLeftCell.xib in Resources */,
 				FEA43B5E1D16E50E0069F9A7 /* WLRecommedController.xib in Resources */,
 				FE7F28311D1C0A60006D3BED /* WLRecommendCell.xib in Resources */,
+				FE7F28871D1FCC7A006D3BED /* WLTopicCell.xib in Resources */,
 				FE7F28621D1D7B3C006D3BED /* WLLoginAndRegisterController.xib in Resources */,
 				FEA43B701D1841B00069F9A7 /* WLRightCell.xib in Resources */,
 				FEA43AF21D165AD90069F9A7 /* Assets.xcassets in Resources */,
@@ -515,22 +558,29 @@
 			files = (
 				FEA43B571D16BF250069F9A7 /* WLNavigationBar.m in Sources */,
 				FEA43B451D16B43D0069F9A7 /* AppDelegate.m in Sources */,
+				FE7F288A1D202FD1006D3BED /* NSDate+Extension.m in Sources */,
 				FEA43B4A1D16B43D0069F9A7 /* WLTabBar.m in Sources */,
 				FEA43B4C1D16B43D0069F9A7 /* WLNewController.m in Sources */,
 				FEA43B5D1D16E50E0069F9A7 /* WLRecommedController.m in Sources */,
 				FEA43B461D16B43D0069F9A7 /* WLTabBarController.m in Sources */,
 				FEA43B671D1826C70069F9A7 /* WLLeftCell.m in Sources */,
 				FEA43B631D181DAD0069F9A7 /* WLCategory.m in Sources */,
+				FE7F28861D1FCC7A006D3BED /* WLTopicCell.m in Sources */,
+				FE7F286B1D1E6C96006D3BED /* WLPushGuideView.m in Sources */,
 				FEA43B441D16B43D0069F9A7 /* WLFriendTrendsController.m in Sources */,
 				FE7F28301D1C0A60006D3BED /* WLRecommendCell.m in Sources */,
 				FE7F28611D1D7B3C006D3BED /* WLLoginAndRegisterController.m in Sources */,
+				FE7F288D1D21832C006D3BED /* WLTopicViewController.m in Sources */,
 				FEA43B6B1D183C7C0069F9A7 /* WLRecommedUser.m in Sources */,
+				FE7F28821D1FC546006D3BED /* WLConst.m in Sources */,
 				FEA43B6F1D1841B00069F9A7 /* WLRightCell.m in Sources */,
 				FEA43B471D16B43D0069F9A7 /* main.m in Sources */,
 				FEA43B431D16B43D0069F9A7 /* WLEssenceController.m in Sources */,
 				FEA43B4B1D16B43D0069F9A7 /* WLMeController.m in Sources */,
 				FE7F28271D1AEB5D006D3BED /* WLRecommendViewController.m in Sources */,
 				FEA43B601D16E95B0069F9A7 /* Foundation+Log.m in Sources */,
+				FE7F28681D1E49C4006D3BED /* WLTextField.m in Sources */,
+				FE7F287F1D1FB36E006D3BED /* WLTopic.m in Sources */,
 				FE7F28341D1C0F61006D3BED /* WLRecommend.m in Sources */,
 				FE7F28651D1D8A8E006D3BED /* WLQuickBtn.m in Sources */,
 				FEA43B531D16B6C00069F9A7 /* UIBarButtonItem+WLExtension.m in Sources */,

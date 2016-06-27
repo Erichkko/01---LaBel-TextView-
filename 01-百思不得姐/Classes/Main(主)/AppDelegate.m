@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WLTabBarController.h"
-
+#import "WLPushGuideView.h"
 @interface AppDelegate ()
 
 @end
@@ -25,15 +25,15 @@
     
     //2.设置跟控制器
     WLTabBarController *tabBarVc = [[WLTabBarController alloc] init];
-    
-       
-    
     self.window.rootViewController = tabBarVc;
     
     
     //3.显示窗口
     [self.window makeKeyAndVisible];
     
+    //4.判断是否需要添加引导页
+    [WLPushGuideView show];
+
     return YES;
 }
 

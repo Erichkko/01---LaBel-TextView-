@@ -70,4 +70,27 @@
     self.frame = rect;
     
 }
+
+- (void)setCenterx:(CGFloat)centerx
+{
+    CGPoint center = self.center;
+    center.x = centerx;
+    self.center = center;
+}
+- (void)setCentery:(CGFloat)centery
+{
+    CGPoint center = self.center;
+    center.y = centery;
+    self.center = center;
+}
+
+- (CGFloat)centerx
+{
+   return self.center.x;
+}
+
+- (CGFloat)centery
+{
+    return self.center.y;
+}
 @end
