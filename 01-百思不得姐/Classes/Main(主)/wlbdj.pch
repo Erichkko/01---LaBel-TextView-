@@ -27,5 +27,6 @@
 #define WLGlobalColor  WLRGBColor(223, 223, 223)
 #define WLUSerDefault [NSUserDefaults standardUserDefaults]
 #define WLWindow [UIApplication sharedApplication].keyWindow
+#define WLCellFont [UIFont systemFontOfSize:13]
 
 #endif /* wlbdj_pch */

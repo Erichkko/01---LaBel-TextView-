@@ -13,6 +13,7 @@
 #import <UIImageView+WebCache.h>
 #import <MJRefresh.h>
 #import <MJExtension.h>
+#import "WLCommentViewController.h"
 
 @interface WLTopicViewController ()
 
@@ -142,11 +143,34 @@ static  NSString * const ID = @"topicCell";
     WLTopic *topic = self.topics[indexPath.row];
     WLTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     cell.topic =topic;
+
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 200.0;
+    WLTopic *topic = self.topics[indexPath.row];
+    //方法1 只适用于 单行 情况
+//    NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
+//    dictM[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+//    contentH = [topic.text sizeWithAttributes:dictM].height;
+    
+    //方法2 只适用于 此法可行 不过已经过期了
+//    contentH = [topic.text  sizeWithFont:[UIFont systemFontOfSize:13] constrainedToSize:CGSizeMake(tableView.width - 40, MAXFLOAT)].height;
+    
+    //方法3
+//    CGFloat contentH  = [topic.text boundingRectWithSize:CGSizeMake(tableView.width - 4 * margin, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} context:nil].size.height;
+//    
+//    return contentY + contentH + bottomH + 2 * margin;
+
+    return topic.cellHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    WLTopic *topic = self.topics[indexPath.row];
+    WLCommentViewController *cmtVc = [[WLCommentViewController alloc] init];
+    cmtVc.topic = topic;
+    [self.navigationController pushViewController:cmtVc animated:YES];
 }
 @end

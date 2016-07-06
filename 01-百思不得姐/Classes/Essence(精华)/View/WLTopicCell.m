@@ -8,6 +8,10 @@
 
 #import "WLTopicCell.h"
 #import "WLTopic.h"
+#import "WLPIcture.h"
+#import "WLVoice.h"
+#import "WLVideo.h"
+#import "WLTopCommentView.h"
 #import <UIImageView+WebCache.h>
 
 @interface WLTopicCell()
@@ -20,15 +24,65 @@
 @property (weak, nonatomic) IBOutlet UIButton *shareBtn;
 @property (weak, nonatomic) IBOutlet UIButton *commentBtn;
 @property (weak, nonatomic) IBOutlet UIImageView *sinaVImageView;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+
+/** picture */
+@property(nonatomic,weak)WLPIcture *picture;
+/** voice */
+@property(nonatomic,weak)WLVoice *voice;
+/** video */
+@property(nonatomic,weak)WLVideo *video;
+/** video */
+@property(nonatomic,weak)WLTopCommentView *topcmtView;
 @end
 @implementation WLTopicCell
+- (WLPIcture *)picture
+{
+    if (_picture == nil) {
+        WLPIcture *picture = [WLPIcture picture];
+        [self.contentView addSubview:picture];
+        _picture = picture;
+    }
+    return _picture;
+}
 
+- (WLVoice *)voice
+{
+    if (_voice == nil) {
+        WLVoice *voice = [WLVoice voice];
+        [self.contentView addSubview:voice];
+        _voice = voice;
+    }
+    return _voice;
+}
+
+
+- (WLVideo *)video
+{
+    if (_video == nil) {
+        WLVideo *video = [WLVideo videoView];
+        [self.contentView addSubview:video];
+        _video = video;
+    }
+    return _video;
+}
+
+- (WLTopCommentView *)topcmtView
+{
+    if (_topcmtView == nil) {
+        WLTopCommentView *topcmtView= [WLTopCommentView commentView];
+        [self.contentView addSubview:topcmtView];
+        _topcmtView = topcmtView;
+    }
+    return _topcmtView;
+}
 
 + (instancetype)topicCell
 {
      WLTopicCell *cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:kNilOptions] lastObject];
     return cell;
 }
+
 - (void)awakeFromNib {
     UIImageView *bgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainCellBackground"]];
     
@@ -51,6 +105,43 @@
     }else{
         self.sinaVImageView.hidden = YES;
     }
+
+    self.contentLabel.text = topic.text;
+    
+    //如果是图片
+    if (self.topic.type == WLTopicTypePicture) {
+        self.picture.hidden = NO;
+        self.video.hidden = YES;
+        self.voice.hidden = YES;
+        self.picture.frame =topic.pictureRect;
+        self.picture.topic = topic;
+    }else if (self.topic.type == WLTopicTypeVoice){
+        self.picture.hidden = YES;
+        self.video.hidden = YES;
+        self.voice.hidden = NO;
+        self.voice.frame =topic.voiceRect;
+        self.voice.topic = topic;
+    }else if (self.topic.type == WLTopicTypeAudio){
+        self.picture.hidden = YES;
+        self.video.hidden = NO;
+        self.voice.hidden = YES;
+        self.video.topic = topic;
+        self.video.frame = topic.videoRect;
+    }else{
+        self.picture.hidden = YES;
+        self.video.hidden = YES;
+        self.voice.hidden = YES;
+        
+    }
+    
+    if (self.topic.top_cmt.count != 0) {
+        self.topcmtView.hidden = NO;
+        self.topcmtView.topComment = topic.top_cmt[0];
+        self.topcmtView.frame = topic.topcmtRect;
+    }else{
+        self.topcmtView.hidden = YES;
+    }
+    
     
     //设置cell的底部数据
     [self formatStringWithNumber:topic.ding andBtn:self.dingBtn];
@@ -143,8 +234,29 @@
     static CGFloat margin = 10;
     frame.origin.x = margin;
     frame.size.width -= 2 * margin;
-    frame.size.height  -= margin;
+//    frame.size.height  -= margin;
+    frame.size.height = self.topic.cellHeight - margin;
     frame.origin.y += margin;
     [super setFrame:frame];
+}
+- (IBAction)more:(id)sender {
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    [alert addAction:[UIAlertAction actionWithTitle:@"收藏" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        WLLog(@"ok");
+    }]];
+  
+  
+    [alert addAction:[UIAlertAction actionWithTitle:@"举报" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        WLLog(@"123");
+    }]];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        WLLog(@"123");
+    }]];
+    [WLWindow.rootViewController presentViewController:alert animated:YES completion:nil];
+    
+    
+    
 }
 @end

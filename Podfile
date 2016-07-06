@@ -5,5 +5,7 @@ target '01-百思不得姐' do
     pod 'SVProgressHUD'
     pod 'MJExtension'
     pod 'MJRefresh'
+    pod 'DACircularProgress', '~> 2.3.1'
+    pod 'pop'
 
 end

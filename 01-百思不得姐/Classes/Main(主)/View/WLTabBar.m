@@ -7,6 +7,7 @@
 //
 
 #import "WLTabBar.h"
+#import "WLPublicViewController.h"
 
 @interface WLTabBar ()
 /** publishButton */
@@ -25,12 +26,27 @@
         
         [_publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [_publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
-        
+        [_publishButton addTarget:self action:@selector(publicTopic) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_publishButton];
     }
     return self;
 }
 
+UIWindow *mywindow;
+- (void) publicTopic
+{
+    
+//    mywindow = [[UIWindow alloc] init];
+//    mywindow.backgroundColor = [UIColor redColor];
+//    mywindow.frame = WLWindow.bounds;
+//    mywindow.windowLevel = UIWindowLevelNormal;
+//    mywindow.hidden = NO;
+    
+    
+    
+    WLPublicViewController *publicVc = [[WLPublicViewController alloc] init];
+    [WLWindow.rootViewController presentViewController:publicVc animated:NO completion:nil];
+}
 
 - (void)layoutSubviews
 {
