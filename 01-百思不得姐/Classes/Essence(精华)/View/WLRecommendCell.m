@@ -43,9 +43,12 @@
         followStr = [NSString stringWithFormat:@"%zd个人订阅",followNumber];
     }
     self.followLabel.text = followStr;
-    [self.iconImage sd_setImageWithURL:[NSURL URLWithString:recommend.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        WLLogFunc;
-    }];
+//    UIImage *placeholderImage = [[UIImage imageNamed:@"defaultUserIcon"] circleImage];
+
+//    [self.iconImage sd_setImageWithURL:[NSURL URLWithString:recommend.image_list] placeholderImage:placeholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//        self.iconImage.image =image?[image circleImage]:placeholderImage;
+//    }];
+       [self.iconImage setCircleHeaderWithURL:recommend.image_list];
 }
 
 - (void)setFrame:(CGRect)frame

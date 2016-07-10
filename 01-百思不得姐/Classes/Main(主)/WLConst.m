@@ -25,3 +25,7 @@ NSString * const WLUserSexMale = @"m";
 NSString * const WLUserSexFemale = @"f";
 
 CGFloat const cellTopcmtH = 20;
+
+NSString * const WLTabBarDidSelectedNotification = @"WLTabBarDidSelectedNotification";
+NSString * const WLTabBarDidSelectedIndexKey = @"WLTabBarDidSelectedIndexKey";
+NSString * const WLTabBarDidSelectedVcKey = @"WLTabBarDidSelectedVcKey";

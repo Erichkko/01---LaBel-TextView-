@@ -23,4 +23,6 @@
 @property(nonatomic,assign)CGFloat centerx;
 /** centery */
 @property(nonatomic,assign)CGFloat centery;
+
+-(BOOL) isShowingOnKeyWindow;
 @end

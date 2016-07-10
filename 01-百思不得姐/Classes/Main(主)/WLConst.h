@@ -26,3 +26,11 @@ UIKIT_EXTERN NSString * const WLUserSexMale ;
 UIKIT_EXTERN NSString * const WLUserSexFemale ;
 
 UIKIT_EXTERN CGFloat const cellTopcmtH ;
+/**
+ *  WLTabBarDidSelectedNotification 通知名称
+        WLTabBarDidSelectedIndexKey 通知携带的点击的控制器下标
+           WLTabBarDidSelectedVcKey 通知携带的点击的控制器
+ */
+UIKIT_EXTERN NSString * const WLTabBarDidSelectedNotification ;
+UIKIT_EXTERN NSString * const WLTabBarDidSelectedIndexKey;
+UIKIT_EXTERN NSString * const WLTabBarDidSelectedVcKey;

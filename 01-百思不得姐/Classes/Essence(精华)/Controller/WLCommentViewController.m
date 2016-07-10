@@ -72,7 +72,11 @@
     [manager GET:WLURL parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         nil;
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-        WLLog(@"==== %@",responseObject);
+        
+        if (![responseObject isKindOfClass:[NSDictionary class]]) {
+            [self.tableView.mj_footer endRefreshing];
+            return ;
+        }
        WLAllComment *newData = [WLAllComment mj_objectWithKeyValues:responseObject];
         
         [self.comment.data addObjectsFromArray:newData.data];
@@ -106,7 +110,12 @@
     [manager GET:WLURL parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         nil;
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-        WLLog(@"==== %@",responseObject);
+//        WLLog(@"==== %@",responseObject);
+        
+        if (![responseObject isKindOfClass:[NSDictionary class]]) {
+            [self.tableView.mj_header endRefreshing];
+            return ;
+        }
         self.comment = [WLAllComment mj_objectWithKeyValues:responseObject];
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
@@ -192,6 +201,8 @@
         [self.topic setValue:@(0) forKey:@"cellHeight"];
     }
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    UIMenuController *menu = [UIMenuController sharedMenuController];
+    menu.menuItems = nil;
 }
 - (void)more
 {
@@ -206,6 +217,12 @@
     return self.comment.data;
 }
 
+- (WLComment *)commentIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *array = [self commentsInSection:indexPath.section];
+    WLComment *cmt = array[indexPath.row];
+    return cmt;
+}
 #pragma mark - UITableViewDataSource
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
@@ -262,10 +279,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *array = [self commentsInSection:indexPath.section];
-    WLComment *cmt = array[indexPath.row];
+  
     WLCommentView *cell = [tableView dequeueReusableCellWithIdentifier:commentId];
-    cell.comment = cmt;
+    cell.comment = [self commentIndexPath:indexPath];
     return cell;
 }
 
@@ -274,6 +290,53 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     [self.view endEditing:YES];
+    [[UIMenuController sharedMenuController] setMenuVisible:NO animated:YES];
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIMenuController *menu = [UIMenuController sharedMenuController];
+    
+    if (menu.menuVisible) {
+        [menu setMenuVisible:NO animated:YES];
+    }else{
+        WLCommentView *cell = (WLCommentView *)[tableView cellForRowAtIndexPath:indexPath];
+        [cell becomeFirstResponder];
+
+        UIMenuItem *dingItem = [[UIMenuItem alloc] initWithTitle:@"顶" action:@selector(ding:)];
+        UIMenuItem *replayItem = [[UIMenuItem alloc] initWithTitle:@"回复" action:@selector(ding:)];
+        UIMenuItem *commentItem = [[UIMenuItem alloc] initWithTitle:@"评论" action:@selector(ding:)];
+        
+        menu.menuItems = @[dingItem,replayItem,commentItem];
+        
+        CGRect rect = CGRectMake(0, cell.height * 0.5, cell.width, cell.height *0.5);
+        [menu setTargetRect:rect inView:cell];
+        [menu setMenuVisible:YES animated:YES];
+    }
+   
+}
+
+
+- (void)ding:(UIMenuItem *)item
+{
+    NSIndexPath *indexPath =[self.tableView indexPathForSelectedRow];
+    
+    WLComment *comment = [self commentIndexPath:indexPath];
+    WLLog(@"comment == %@",comment.content);
+}
+- (void)replay:(UIMenuItem *)item
+{
+    NSIndexPath *indexPath =[self.tableView indexPathForSelectedRow];
+
+    WLComment *comment = [self commentIndexPath:indexPath];
+    WLLog(@"comment == %@",comment.content);
+}
+- (void)comment:(UIMenuItem *)item
+{
+    NSIndexPath *indexPath =[self.tableView indexPathForSelectedRow];
+
+    WLComment *comment = [self commentIndexPath:indexPath];
+    WLLog(@"comment == %@",comment.content);
+}
 @end

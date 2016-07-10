@@ -8,6 +8,9 @@
 
 #import "WLPublicViewController.h"
 #import "WLPublish.h"
+#import "WLPublicTopicViewController.h"
+
+#import "WLNavigationBar.h"
 #import <POP.h>
 
 
@@ -109,12 +112,20 @@
 }
 - (void)clickBtn:(UIButton *)btn
 {
-    [self cancel];
-    if (btn.tag == 0) {
-        [self cancelCompleteBlock:^{
-            WLLog(@"666");
-        }];
-    }
+    [self cancelCompleteBlock:^{
+        if (btn.tag == 4) {
+            
+            
+            WLPublicTopicViewController *publicTopicVc = [[WLPublicTopicViewController alloc] init];
+ 
+            WLNavigationBar *navVc = [[WLNavigationBar alloc] initWithRootViewController:publicTopicVc];
+            UITabBarController *tabbarVc = (UITabBarController *)WLWindow.rootViewController;
+            [tabbarVc presentViewController:navVc animated:YES completion:nil];
+        }else if(btn.tag == 0){
+            WLLog(@"发音频");
+        }
+//            [self cancel];
+    }];
     
 }
 - (IBAction)cancelClick:(id)sender {

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WLEssenceController.h"
 
-@interface WLNewController : UIViewController
+@interface WLNewController : WLEssenceController
 
 @end

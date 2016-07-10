@@ -50,7 +50,7 @@
     WLFriendTrendsController *friendTrendsVc = [[WLFriendTrendsController alloc]  init];
     [self setupViewController:friendTrendsVc title:@"关注" normalImage:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     
-    WLMeController *meVc = [[WLMeController alloc] init];
+    WLMeController *meVc = [[WLMeController alloc] initWithStyle:UITableViewStyleGrouped];
     [self setupViewController:meVc title:@"我" normalImage:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
     
     [self setValue: [[WLTabBar alloc] init] forKey:@"tabBar"];

@@ -13,6 +13,9 @@
 #import "NSDate+Extension.h"
 #import "UIBarButtonItem+WLExtension.h"
 #import "WLConst.h"
+#import "UIImage+WLExtension.h"
+#import "UIImageView+WLExtension.h"
+
 
 
 #ifdef DEBUG
@@ -27,6 +30,8 @@
 #define WLGlobalColor  WLRGBColor(223, 223, 223)
 #define WLUSerDefault [NSUserDefaults standardUserDefaults]
 #define WLWindow [UIApplication sharedApplication].keyWindow
+#define WLScreenW  WLWindow.width
 #define WLCellFont [UIFont systemFontOfSize:13]
+#define WLNoteCenter [NSNotificationCenter defaultCenter]
 
 #endif /* wlbdj_pch */

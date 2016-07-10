@@ -93,4 +93,12 @@
 {
     return self.center.y;
 }
+
+- (BOOL)isShowingOnKeyWindow
+{
+    CGRect newFrame = [self.superview convertRect:self.frame toView:WLWindow];
+    CGRect windowFrame = WLWindow.bounds;
+    return !self.isHidden && self.alpha >= 0.01 && self.window == WLWindow && CGRectContainsRect(newFrame,windowFrame);
+    
+}
 @end

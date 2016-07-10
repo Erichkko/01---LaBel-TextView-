@@ -39,7 +39,12 @@
 {
     _comment = comment;
     WLUser *user = comment.user;
-    [self.userHeaderView sd_setImageWithURL:[NSURL URLWithString:user.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+//    
+//    UIImage *placeholderImage = [[UIImage imageNamed:@"defaultUserIcon"] circleImage];
+//    [self.userHeaderView sd_setImageWithURL:[NSURL URLWithString:user.profile_image] placeholderImage:placeholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//        self.userHeaderView.image =image ?[image circleImage]:placeholderImage;
+//    }];
+    [self.userHeaderView setCircleHeaderWithURL:user.profile_image];
 
     if ([user.sex isEqualToString:WLUserSexMale]) {
         self.senderView.image = [UIImage imageNamed:@"Profile_manIcon"];
@@ -67,5 +72,15 @@
     frame.size.width = WLWindow.width - 2 * frame.origin.x;
     
     [super setFrame:frame];
+}
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+    return NO;
 }
 @end

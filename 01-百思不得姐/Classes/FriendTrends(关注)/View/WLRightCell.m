@@ -29,12 +29,13 @@
     self.nameLabel.text = user.screen_name;
     self.infoLabel.text = [NSString stringWithFormat:@"已有%@关注",user.fans_count];
     
+//    UIImage *placeholderImage = [[UIImage imageNamed:@"defaultUserIcon"] circleImage];
+//
+//    [self.iconView sd_setImageWithURL:[NSURL URLWithString:user.header]placeholderImage:placeholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//        self.iconView.image  = image?[image circleImage]:placeholderImage;
+//    }];
     
-    [self.iconView  sd_setImageWithPreviousCachedImageWithURL:[NSURL URLWithString:user.header] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"] options:kNilOptions progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-        
-    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        
-    }];
+        [self.iconView setCircleHeaderWithURL:user.header];
 }
 
 @end

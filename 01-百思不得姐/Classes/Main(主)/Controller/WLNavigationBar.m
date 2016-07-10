@@ -16,11 +16,18 @@
 //此方法 会在第一次调用此类的时候调用
 + (void)initialize
 {
-    
-    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[self class]]];
-    
+//    
+//    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[self class]]];
+    UINavigationBar *navBar = [UINavigationBar appearance];
     [navBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     [navBar setTintColor:[UIColor blackColor]];
+    //改变标题大小
+    [navBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:20]}];
+    //改变左右iten颜色
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
+    [item setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
+     [item setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor]} forState:UIControlStateHighlighted];
+     [item setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor]} forState:UIControlStateDisabled];
 }
 -(void)viewDidLoad
 {

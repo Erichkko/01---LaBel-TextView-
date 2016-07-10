@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 #import "WLTabBarController.h"
 #import "WLPushGuideView.h"
-@interface AppDelegate ()
+#import "WLTopWindow.h"
+@interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
 
@@ -25,17 +26,29 @@
     
     //2.设置跟控制器
     WLTabBarController *tabBarVc = [[WLTabBarController alloc] init];
+    tabBarVc.delegate = self;
     self.window.rootViewController = tabBarVc;
-    
-    
+
     //3.显示窗口
     [self.window makeKeyAndVisible];
     
     //4.判断是否需要添加引导页
     [WLPushGuideView show];
+    
+    //5.状态栏 添加window 可以设置点击事件
+    [WLTopWindow show];
 
     return YES;
 }
+
+#pragma mark - UITabBarControllerDelegate
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    [WLNoteCenter postNotificationName:WLTabBarDidSelectedNotification object:nil userInfo:nil];
+    
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -49,10 +62,13 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+   
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

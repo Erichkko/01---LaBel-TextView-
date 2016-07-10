@@ -14,6 +14,7 @@
 #import <MJRefresh.h>
 #import <MJExtension.h>
 #import "WLCommentViewController.h"
+#import "WLNewController.h"
 
 @interface WLTopicViewController ()
 
@@ -25,6 +26,9 @@
 @property(nonatomic,strong)NSString *maxtime;
 /** params网络请求过滤 */
 @property(nonatomic,strong)NSMutableDictionary *params;
+
+/**index*/
+@property(nonatomic,assign)NSInteger preIndex ;
 
 @end
 
@@ -67,8 +71,33 @@ static  NSString * const ID = @"topicCell";
     //    [self.tableView registerNib:[[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([WLTopicCell class]) owner:nil options:kNilOptions] lastObject] forCellReuseIdentifier:ID];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WLTopicCell class]) bundle:nil] forCellReuseIdentifier:ID];
     [self.tableView setRowHeight:180.0];
+    
+    
+   
+    
+    [WLNoteCenter addObserver:self selector:@selector(tabbaClick) name:WLTabBarDidSelectedNotification object:nil];
 }
 
+
+- (void)tabbaClick
+{
+    
+    if (self.preIndex == self.tabBarController.selectedIndex&&self.tabBarController.selectedViewController == self.navigationController&&self.view.isShowingOnKeyWindow) {
+          [self.tableView.mj_header beginRefreshing];
+    }
+    
+    self.preIndex =  self.tabBarController.selectedIndex;
+   
+}
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (NSString *)aParam
+{
+    return [self.parentViewController isKindOfClass:[WLNewController class]]?@"newlist":@"list";
+}
 - (void)loadNewData
 {
     
@@ -76,7 +105,7 @@ static  NSString * const ID = @"topicCell";
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     
-    params[@"a"] = @"list";
+    params[@"a"] = [self aParam];
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
     self.params = params;
@@ -105,7 +134,7 @@ static  NSString * const ID = @"topicCell";
     NSInteger pageIndex =  self.page + 1;
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
+    params[@"a"] = [self aParam];
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
     params[@"page"] = @(pageIndex);

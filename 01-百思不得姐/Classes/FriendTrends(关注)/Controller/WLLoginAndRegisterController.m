@@ -73,4 +73,14 @@
 {
     [self.view endEditing:YES];
 }
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+}
+
+- (void)dealloc
+{
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+}
 @end

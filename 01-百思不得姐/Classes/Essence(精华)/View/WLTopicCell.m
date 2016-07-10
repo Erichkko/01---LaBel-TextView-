@@ -95,7 +95,12 @@
 {
     _topic = topic;
     
-    [self.profileImageview sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+//    UIImage *placeholderImage = [[UIImage imageNamed:@"defaultUserIcon"] circleImage];
+//    [self.profileImageview sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:placeholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//        self.profileImageview.image = image?[image circleImage]:placeholderImage;
+//    }];
+    
+      [self.profileImageview setCircleHeaderWithURL:topic.profile_image];
     self.nameLabel.text = topic.name;
     self.timeLabel.text = topic.create_time;
     
