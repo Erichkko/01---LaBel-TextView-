@@ -12,6 +12,7 @@
 #import "WLMeFooterView.h"
 #import <AFNetworking.h>
 #import <MJExtension.h>
+#import "WLSettingViewController.h"
 @interface WLMeController ()
 /** squares */
 @property(nonatomic,strong)NSArray *squares;
@@ -71,7 +72,8 @@
 }
 -(void)setBarButtonItem
 {
-    WLLogFunc;
+    WLSettingViewController *setVc = [[WLSettingViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    [self.navigationController pushViewController:setVc animated:YES];
 }
 
 -(void)moonBarButtonItem

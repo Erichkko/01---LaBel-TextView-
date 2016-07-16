@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7A7EEBA2F09AD9AD8C4514D4 /* libPods-01-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1668EEAA845B4AD4DB863B16 /* libPods-01-百思不得姐.a */; };
+		FE1282901D326D290061F61E /* WLAddTagToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FE12828F1D326D290061F61E /* WLAddTagToolBar.m */; };
+		FE1282921D326D390061F61E /* WLAddTagToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1282911D326D390061F61E /* WLAddTagToolBar.xib */; };
+		FE1282951D3284350061F61E /* WLAddTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1282941D3284350061F61E /* WLAddTagViewController.m */; };
+		FE1282981D3538730061F61E /* WLTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1282971D3538730061F61E /* WLTagButton.m */; };
+		FE12829B1D36841A0061F61E /* WLTagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FE12829A1D36841A0061F61E /* WLTagTextField.m */; };
 		FE43386F1D2D0688009B19B0 /* WLTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FE43386E1D2D0688009B19B0 /* WLTopWindow.m */; };
 		FE4338721D2D0AFA009B19B0 /* WLTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4338711D2D0AFA009B19B0 /* WLTopViewController.m */; };
 		FE4EAAFF1D28160500DB835A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4EAAFE1D28160500DB835A /* MapKit.framework */; };
@@ -32,6 +37,8 @@
 		FE90D2771D3144EA002666C3 /* WLWebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE90D2751D3144EA002666C3 /* WLWebController.xib */; };
 		FE90D27A1D32173E002666C3 /* WLPublicTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE90D2791D32173E002666C3 /* WLPublicTopicViewController.m */; };
 		FE90D27D1D323982002666C3 /* WLPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE90D27C1D323982002666C3 /* WLPlaceholderTextView.m */; };
+		FE9BFE811D39184D006D0486 /* WLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9BFE801D39184D006D0486 /* WLSettingViewController.m */; };
+		FE9BFE881D3A135E006D0486 /* WLLoginTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9BFE871D3A135E006D0486 /* WLLoginTool.m */; };
 		FEA43AF21D165AD90069F9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA43AF11D165AD90069F9A7 /* Assets.xcassets */; };
 		FEA43B431D16B43D0069F9A7 /* WLEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B1A1D16B43D0069F9A7 /* WLEssenceController.m */; };
 		FEA43B441D16B43D0069F9A7 /* WLFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA43B241D16B43D0069F9A7 /* WLFriendTrendsController.m */; };
@@ -86,6 +93,15 @@
 		1668EEAA845B4AD4DB863B16 /* libPods-01-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-01-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		913896BE5A71F3D321364CEF /* Pods-01-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-01-百思不得姐/Pods-01-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
 		FBCD11A3A4C4B6359E07878D /* Pods-01-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-01-百思不得姐/Pods-01-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
+		FE12828E1D326D290061F61E /* WLAddTagToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLAddTagToolBar.h; sourceTree = "<group>"; };
+		FE12828F1D326D290061F61E /* WLAddTagToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLAddTagToolBar.m; sourceTree = "<group>"; };
+		FE1282911D326D390061F61E /* WLAddTagToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLAddTagToolBar.xib; sourceTree = "<group>"; };
+		FE1282931D3284350061F61E /* WLAddTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLAddTagViewController.h; sourceTree = "<group>"; };
+		FE1282941D3284350061F61E /* WLAddTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLAddTagViewController.m; sourceTree = "<group>"; };
+		FE1282961D3538730061F61E /* WLTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTagButton.h; sourceTree = "<group>"; };
+		FE1282971D3538730061F61E /* WLTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTagButton.m; sourceTree = "<group>"; };
+		FE1282991D36841A0061F61E /* WLTagTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTagTextField.h; sourceTree = "<group>"; };
+		FE12829A1D36841A0061F61E /* WLTagTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTagTextField.m; sourceTree = "<group>"; };
 		FE43386D1D2D0688009B19B0 /* WLTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTopWindow.h; sourceTree = "<group>"; };
 		FE43386E1D2D0688009B19B0 /* WLTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTopWindow.m; sourceTree = "<group>"; };
 		FE4338701D2D0AFA009B19B0 /* WLTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTopViewController.h; sourceTree = "<group>"; };
@@ -128,6 +144,10 @@
 		FE90D2791D32173E002666C3 /* WLPublicTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLPublicTopicViewController.m; sourceTree = "<group>"; };
 		FE90D27B1D323982002666C3 /* WLPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLPlaceholderTextView.h; sourceTree = "<group>"; };
 		FE90D27C1D323982002666C3 /* WLPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLPlaceholderTextView.m; sourceTree = "<group>"; };
+		FE9BFE7F1D39184D006D0486 /* WLSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSettingViewController.h; sourceTree = "<group>"; };
+		FE9BFE801D39184D006D0486 /* WLSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSettingViewController.m; sourceTree = "<group>"; };
+		FE9BFE861D3A135E006D0486 /* WLLoginTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLoginTool.h; sourceTree = "<group>"; };
+		FE9BFE871D3A135E006D0486 /* WLLoginTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLoginTool.m; sourceTree = "<group>"; };
 		FEA43AE21D165AD90069F9A7 /* 01-百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA43AF11D165AD90069F9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA43AF61D165AD90069F9A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -212,7 +232,6 @@
 		FED81DCE1D31229B005A9A24 /* WLMeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMeFooterView.m; sourceTree = "<group>"; };
 		FED81DD01D31288D005A9A24 /* WLSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSquare.h; sourceTree = "<group>"; };
 		FED81DD11D31288D005A9A24 /* WLSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSquare.m; sourceTree = "<group>"; };
-		FEFDE08B1D2815BC00ADCD78 /* 01-百思不得姐.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "01-百思不得姐.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +265,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FE9BFE851D3A135E006D0486 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FE9BFE861D3A135E006D0486 /* WLLoginTool.h */,
+				FE9BFE871D3A135E006D0486 /* WLLoginTool.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		FEA43AD91D165AD90069F9A7 = {
 			isa = PBXGroup;
 			children = (
@@ -267,7 +295,6 @@
 		FEA43AE41D165AD90069F9A7 /* 01-百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
-				FEFDE08B1D2815BC00ADCD78 /* 01-百思不得姐.entitlements */,
 				FEA43B161D16B43D0069F9A7 /* Classes */,
 				FEA43AE51D165AD90069F9A7 /* Supporting Files */,
 			);
@@ -429,6 +456,7 @@
 		FEA43B271D16B43D0069F9A7 /* Main(主) */ = {
 			isa = PBXGroup;
 			children = (
+				FE9BFE851D3A135E006D0486 /* Tools */,
 				FEA43B4E1D16B6C00069F9A7 /* Category */,
 				FEA43B2A1D16B43D0069F9A7 /* Controller */,
 				FEA43B2E1D16B43D0069F9A7 /* Model */,
@@ -495,6 +523,8 @@
 				FE90D2731D3144EA002666C3 /* WLWebController.h */,
 				FE90D2741D3144EA002666C3 /* WLWebController.m */,
 				FE90D2751D3144EA002666C3 /* WLWebController.xib */,
+				FE9BFE7F1D39184D006D0486 /* WLSettingViewController.h */,
+				FE9BFE801D39184D006D0486 /* WLSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -590,6 +620,8 @@
 				FEAB979F1D2699BA00114446 /* WLPublicViewController.xib */,
 				FE90D2781D32173E002666C3 /* WLPublicTopicViewController.h */,
 				FE90D2791D32173E002666C3 /* WLPublicTopicViewController.m */,
+				FE1282931D3284350061F61E /* WLAddTagViewController.h */,
+				FE1282941D3284350061F61E /* WLAddTagViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -608,6 +640,13 @@
 				FEAB97A31D26A58300114446 /* WLPublish.m */,
 				FE90D27B1D323982002666C3 /* WLPlaceholderTextView.h */,
 				FE90D27C1D323982002666C3 /* WLPlaceholderTextView.m */,
+				FE12828E1D326D290061F61E /* WLAddTagToolBar.h */,
+				FE12828F1D326D290061F61E /* WLAddTagToolBar.m */,
+				FE1282911D326D390061F61E /* WLAddTagToolBar.xib */,
+				FE1282961D3538730061F61E /* WLTagButton.h */,
+				FE1282971D3538730061F61E /* WLTagButton.m */,
+				FE1282991D36841A0061F61E /* WLTagTextField.h */,
+				FE12829A1D36841A0061F61E /* WLTagTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -696,6 +735,7 @@
 				FE7F28311D1C0A60006D3BED /* WLRecommendCell.xib in Resources */,
 				FEAB97931D24012700114446 /* WLPIcture.xib in Resources */,
 				FEB8961D1D2818CE00FEE618 /* WLVoice.xib in Resources */,
+				FE1282921D326D390061F61E /* WLAddTagToolBar.xib in Resources */,
 				FE7F28871D1FCC7A006D3BED /* WLTopicCell.xib in Resources */,
 				FEAB97A11D2699BA00114446 /* WLPublicViewController.xib in Resources */,
 				FE7F28621D1D7B3C006D3BED /* WLLoginAndRegisterController.xib in Resources */,
@@ -763,11 +803,14 @@
 			files = (
 				FEAB97971D25502A00114446 /* WLBigPictureViewController.m in Sources */,
 				FEB896311D292B7F00FEE618 /* WLCommentViewController.m in Sources */,
+				FE9BFE811D39184D006D0486 /* WLSettingViewController.m in Sources */,
 				FEA43B571D16BF250069F9A7 /* WLNavigationBar.m in Sources */,
 				FED81DCC1D311B34005A9A24 /* WLMeCell.m in Sources */,
 				FEA43B451D16B43D0069F9A7 /* AppDelegate.m in Sources */,
+				FE1282901D326D290061F61E /* WLAddTagToolBar.m in Sources */,
 				FEB896351D2A9D1E00FEE618 /* WLComment.m in Sources */,
 				FE7F288A1D202FD1006D3BED /* NSDate+Extension.m in Sources */,
+				FE1282951D3284350061F61E /* WLAddTagViewController.m in Sources */,
 				FEA43B4A1D16B43D0069F9A7 /* WLTabBar.m in Sources */,
 				FEA43B4C1D16B43D0069F9A7 /* WLNewController.m in Sources */,
 				FEA43B5D1D16E50E0069F9A7 /* WLRecommedController.m in Sources */,
@@ -778,14 +821,17 @@
 				FEB8963B1D2BF64900FEE618 /* WLCommentView.m in Sources */,
 				FEAB97A41D26A58300114446 /* WLPublish.m in Sources */,
 				FED81DBC1D30D246005A9A24 /* UIImage+WLExtension.m in Sources */,
+				FE12829B1D36841A0061F61E /* WLTagTextField.m in Sources */,
 				FED81DD21D31288D005A9A24 /* WLSquare.m in Sources */,
 				FEB896281D29025900FEE618 /* WLTopComment.m in Sources */,
 				FE7F28861D1FCC7A006D3BED /* WLTopicCell.m in Sources */,
 				FE7F286B1D1E6C96006D3BED /* WLPushGuideView.m in Sources */,
+				FE9BFE881D3A135E006D0486 /* WLLoginTool.m in Sources */,
 				FEB8961B1D2818BF00FEE618 /* WLVoice.m in Sources */,
 				FEA43B441D16B43D0069F9A7 /* WLFriendTrendsController.m in Sources */,
 				FE7F28301D1C0A60006D3BED /* WLRecommendCell.m in Sources */,
 				FE7F28611D1D7B3C006D3BED /* WLLoginAndRegisterController.m in Sources */,
+				FE1282981D3538730061F61E /* WLTagButton.m in Sources */,
 				FEB896201D28C3E300FEE618 /* WLVideo.m in Sources */,
 				FE7F288D1D21832C006D3BED /* WLTopicViewController.m in Sources */,
 				FEA43B6B1D183C7C0069F9A7 /* WLRecommedUser.m in Sources */,

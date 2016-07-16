@@ -32,6 +32,8 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    //左滑失效的话是因为设置导航栏左边按钮为自己的而不是系统自带的，只要设置左划代理失效即可
+    self.interactivePopGestureRecognizer.delegate = nil;
 
 }
 

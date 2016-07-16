@@ -12,6 +12,7 @@
 #import "WLVoice.h"
 #import "WLVideo.h"
 #import "WLTopCommentView.h"
+#import "WLLoginTool.h"
 #import <UIImageView+WebCache.h>
 
 @interface WLTopicCell()
@@ -32,7 +33,7 @@
 @property(nonatomic,weak)WLVoice *voice;
 /** video */
 @property(nonatomic,weak)WLVideo *video;
-/** video */
+/** topcmtView */
 @property(nonatomic,weak)WLTopCommentView *topcmtView;
 @end
 @implementation WLTopicCell
@@ -79,7 +80,7 @@
 
 + (instancetype)topicCell
 {
-     WLTopicCell *cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:kNilOptions] lastObject];
+     WLTopicCell *cell = [self viewFromXib];
     return cell;
 }
 
@@ -249,6 +250,10 @@
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     [alert addAction:[UIAlertAction actionWithTitle:@"收藏" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         WLLog(@"ok");
+        if([WLLoginTool getUid] == nil){
+            [WLLoginTool checkIsLogin];
+            return ;
+        }
     }]];
   
   

@@ -11,6 +11,8 @@
 #import "WLPublicTopicViewController.h"
 
 #import "WLNavigationBar.h"
+#import "WLLoginTool.h"
+
 #import <POP.h>
 
 
@@ -114,7 +116,10 @@
 {
     [self cancelCompleteBlock:^{
         if (btn.tag == 4) {
-            
+            if([WLLoginTool getUid] == nil){
+                [WLLoginTool checkIsLogin];
+                return ;
+            }
             
             WLPublicTopicViewController *publicTopicVc = [[WLPublicTopicViewController alloc] init];
  

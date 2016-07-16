@@ -12,8 +12,8 @@
 
 + (instancetype)guideView
 {
-    WLPushGuideView *view = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
-    return view;
+ 
+    return [self viewFromXib];
 }
 
 + (void)show

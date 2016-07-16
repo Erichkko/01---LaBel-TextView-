@@ -28,10 +28,18 @@
 #define WLRGBAColor(r,g,b,a)  [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define WLRGBColor(r,g,b)  WLRGBAColor(r,g,b,1.0)
 #define WLGlobalColor  WLRGBColor(223, 223, 223)
+#define WLTAGColor  WLRGBColor(75, 105, 209)
+
+
 #define WLUSerDefault [NSUserDefaults standardUserDefaults]
 #define WLWindow [UIApplication sharedApplication].keyWindow
+
+
+
 #define WLScreenW  WLWindow.width
+#define WLScreenH  WLWindow.height
 #define WLCellFont [UIFont systemFontOfSize:13]
+#define WLTagFont [UIFont systemFontOfSize:15]
 #define WLNoteCenter [NSNotificationCenter defaultCenter]
 
 #endif /* wlbdj_pch */

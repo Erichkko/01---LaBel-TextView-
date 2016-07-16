@@ -25,4 +25,6 @@
 @property(nonatomic,assign)CGFloat centery;
 
 -(BOOL) isShowingOnKeyWindow;
+
++ (instancetype)viewFromXib;
 @end

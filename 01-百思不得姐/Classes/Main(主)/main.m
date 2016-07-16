@@ -11,6 +11,8 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+        WLLog(@"%@",NSTemporaryDirectory());
+        WLLog(@"%@",[[NSBundle mainBundle] pathForResource:@"Info.plist" ofType:nil]);
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

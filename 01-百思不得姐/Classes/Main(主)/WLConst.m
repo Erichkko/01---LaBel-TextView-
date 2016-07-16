@@ -15,6 +15,9 @@ NSString * const WLURL = @"http://api.budejie.com/api/api_open.php";
 CGFloat const contentY = 55;
 CGFloat const bottomH = 45;
 CGFloat const margin = 10;
+
+CGFloat const tagMargin = 5;
+CGFloat const tagHeight = 35;
 /**
  *  精华cell图片的最大高度
  */
@@ -29,3 +32,5 @@ CGFloat const cellTopcmtH = 20;
 NSString * const WLTabBarDidSelectedNotification = @"WLTabBarDidSelectedNotification";
 NSString * const WLTabBarDidSelectedIndexKey = @"WLTabBarDidSelectedIndexKey";
 NSString * const WLTabBarDidSelectedVcKey = @"WLTabBarDidSelectedVcKey";
+
+NSString * const WLUserUid = @"WLUserUid";

@@ -27,7 +27,7 @@
 
 + (instancetype)commentView
 {
-    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
+    return [self viewFromXib];
 }
 
 - (void)awakeFromNib {

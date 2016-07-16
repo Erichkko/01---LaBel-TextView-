@@ -24,7 +24,7 @@
 
 + (instancetype)videoView
 {
-    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:kNilOptions] lastObject];
+    return [self viewFromXib];
 }
 
 - (void)awakeFromNib
